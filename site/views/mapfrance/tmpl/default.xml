@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_MAPFRANCE_MAPFRANCE_VIEW_DEFAULT_TITLE">
+		<message>COM_MAPFRANCE_MAPFRANCE_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+			name="request"
+			addfieldpath="/administrator/components/com_mapfrance/models/fields"
+			>
+		<fieldset name="request">
+			<field
+					name="id"
+					type="map"
+					label="COM_MAPFRANCE_MAP_FIELD_NAME_LABEL"
+					description="COM_MAPFRANCE_MAP_FIELD_NAME_DESC"
+					/>
+		</fieldset>
+	</fields>
+</metadata>

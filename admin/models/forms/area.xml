@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true" />
+
+		<field name="map"  type="map" label="COM_MAPFRANCE_AREA_FIELD_MAP_LABEL"
+			description ="COM_MAPFRANCE_AREA_FIELD_MAP_DESC" default="0" 
+			readonly="true" />
+		
+		<field
+			name="parent_id"
+			type="areaparent"
+			label="COM_MAPFRANCE_AREA_FIELD_PARENTID_LABEL"
+			description="COM_MAPFRANCE_AREA_FIELD_PARENTID_DESC"
+			default="1"
+			filter="int"
+			class="inputbox"
+			size="1">
+			<option
+				value="1">COM_MAPFRANCE_AREA_NO_PARENT</option>
+		</field>
+
+		<field name="title" type="text" label="COM_MAPFRANCE_AREA_FIELD_TITLE_LABEL"
+			description="COM_MAPFRANCE_AREA_FIELD_TITLE_DESC" class="inputbox" size="45" required="true" />
+		
+		<field
+			name="listordering"		
+			type="areaordering"
+			label="COM_MAPFRANCE_AREA_FIELD_ORDERING_LABEL"
+			description="COM_MAPFRANCE_AREA_FIELD_ORDERING_DESC"
+			filter="int"
+			class="inputbox"
+			size="1">
+		</field>
+
+		<field
+			name="path"
+			type="hidden"
+			filter="unset"/>
+		
+		<field
+			name="level"
+			type="hidden"
+			filter="unset"/>
+		
+		<field
+			name="lft"
+			type="hidden"
+			filter="unset"/>
+
+		<field
+			name="rgt"
+			type="hidden"
+			filter="unset"/>
+	</fieldset>
+	
+	<fieldset name="styling"
+		label="COM_MAPFRANCE_AREA_FIELDSET_STYLING">
+		
+		<field name="areacolor" type="color" default="#aaaaaa"
+			label="COM_MAPFRANCE_AREA_FIELD_AREA_COLOR"
+			description="COM_MAPFRANCE_AREA_FIELD_AREA_COLOR_DESC" />
+
+		<field name="bordercolor" type="color" default="#555555"
+			label="COM_MAPFRANCE_AREA_FIELD_BORDER_COLOR"
+			description="COM_MAPFRANCE_AREA_FIELD_AREA_BORDER_DESC" />
+
+		<field name="borderwidth" type="list" default=""
+			label="COM_MAPFRANCE_AREA_FIELD_BORDER_WIDTH"
+			description="COM_MAPFRANCE_AREA_FIELD_AREA_WIDTH_DESC">
+				<option value="">COM_MAPFRANCE_AREA_FIELD_BORDER_DEFAULT_MAP</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+		</field>
+
+	</fieldset>
+</form>

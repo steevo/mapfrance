@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.5.0" method="upgrade">
+ 
+	<name>COM_MAPFRANCE</name>
+	<creationDate>December 2015</creationDate>
+	<author>Philippe Ousset</author>
+	<authorEmail>steevo@steevo.fr</authorEmail>
+	<authorUrl>http://www.steevo.fr</authorUrl>
+	<copyright>Copyright (C) 2015 Philippe Ousset. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.0.1</version>
+	<description>COM_MAPFRANCE_DESCRIPTION</description>
+ 
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>mapfrance.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>language</folder>
+	</files>
+ 
+	<administration>
+		<menu link='index.php?option=com_mapfrance'>Map France</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>mapfrance.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+		</files>
+	</administration>
+ 
+</extension>
